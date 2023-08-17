@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Lora&family=Quicksand&family=Roboto&display=swap');
+@charset "utf-8"
+*{
+  margin-left: 30%;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 1080px;
+  background-color: #ffffff;
+  margin-left:14%;
+  padding: 0;
+  box-sizing: border-box;
+}
+header{
+  width: 100%;
+  height: 80px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 13pt;
+  position: relative;
+  z-index: 2;
+}
+nav{
+  width: 80%;
+  height: 70px;
+  float: left;
+  padding-top: 1%;
+}
+section{
+  width: 100%;
+  float: left;
+  position: relative;
+  z-index: 1;
+}
+article{
+  width: 100%;
+  height: 100%;
+}
+  .menuCSS3 ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .menuCSS3 a {
+    display: block;
+    padding: 1.2em;
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #191C26;
+  }
+  .menuCSS3 a:hover {
+    color: #CC673B;
+  }
+  .menuCSS3 ul li ul {
+    display: none;
+  }
+  .menuCSS3 ul li a:hover + ul, .menuCSS3 ul li ul:hover {
+    display: block;
+ 
+  }
+.container{
+  width:20%;
+  height: 70px;
+  float: right;
+}
+.searchbox{
+    float:right;
+    height: 200px;
+    overflow:hidden;
+}
+
+.searchbox-input{
+    width:70%;
+    height:20%;
+    margin-top: 14%;
+    font-size: 12px;
+    border: none;
+    float: left;
+}
+
+.searchbox-submit{
+    width:30%;
+    height:20%;
+    margin-top: 14%;
+    cursor:pointer;
+    border: none;
+    background-image: url(../img/lupa.png);
+    background-size: cover;
+}
+
+
+
+.swiper {
+      width: 1080px;
+      height: 100%;
+      float: left;
+      box-sizing: border-box;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      object-fit: contain;
+      overflow: hidden;
+    }
+
+    .swiper-slide img {
+      display: flex;
+      position: relative;
+      width: 100%;
+    }
+
+.historia{
+  width: 50%;
+  background-color: lightgrey;
+  padding: 5%;
+  margin-top: 0%;
+  position: relative;
+}
+h1{
+   font-size: 50px;
+   font-family: 'Quicksand', sans-serif;
+  }
+p{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+}
+p a{
+  text-decoration: none;
+}
+.imghistoria{
+  width: 30%;
+  height: 350px;
+  float: left;
+  object-fit: scale-down;
+  padding: 6%;
+  background-color: lightgrey;
+}
+.inicio{
+  display: flex;
+}
+
+ .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 2%x;
+    }
+.profile img:hover{
+border-radius:50%;
+-webkit-border-radius:50%;
+box-shadow: 0px 0px 15px 15px #000000;
+-webkit-box-shadow: 0px 0px 15px 15px #000000;
+transform: rotate(360deg);
+-webkit-transform: rotate right;
+transform: rotate(-90deg);
+filter: grayscale(80%);
+filter: saturate(150%);
+
+}
+    .profile img {
+      width: 60%;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .profile h2 {
+      margin-bottom: 30px;
+      margin-top: 5%;
+      font-size: 40px;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    .profile p {
+      font-size: 16px;
+    }
+     .footer {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      background-color: #EA3D3D;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .copyright {
+      grid-column: 1 / span 3;
+    }
+
+    .social-icono {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      grid-column: 2 / span 1;
+    }
+
+    .social-icono a {
+      color: #fff;
+      margin: 0 10px;
+      font-size: 10px;
+      font-family: 'Lora', serif;
+      text-decoration: none;
+    }
+  
+
+ .grid-container-incio{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: center;
+      align-items: center;
+      object-fit: cover;
+    }
+
+    .image-container-inicio{
+      position: relative;
+      overflow: hidden;
+      border-radius: 5px;
+    }
+
+    .image-container-inicio:hover .image-overlay {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .image-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transform: scale(0);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image-overlay a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 18px;
+      padding: 10px 20px;
+      border: 1px solid #fff;
+      border-radius: 5px;
+    }
+
+.galeria-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      margin-top: 10px;
+    }
+
+    .galeria-item {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .galeria-imagen {
+      width: 100%;
+      height: 300px;
+      object-fit: fill;
+      transition: transform 0.3s ease;
+    }
+
+    .galeria-item:hover .galeria-imagen {
+      transform: scale(1.1);
+    }
+
+
+
+.curiosidades {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 2%x;
+    }
+.curiosidades img:hover{
+
+  filter: saturate(150%);
+  transform: scale(1.1);
+
+}
+    .curiosidades img {
+      width: 60%;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .curiosidades h2 {
+      margin-bottom: 30px;
+      margin-top: 5%;
+      font-size: 40px;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    .curiosidades p {
+      font-size: 16px;
+    }
+
+
+
+.container-historia {
+      width: 100%;
+    }
+
+    .seccion {
+      margin-bottom: 4%;
+      padding: 2%;
+    }
+    .seccion-titulo {
+      font-size: 24px;
+      font-weight: bold;
+      font-family: 'Lora', serif;
+      color: darkred;
+    }
+
+    .seccion-imagen {
+      float: right;
+      width: 20%;
+    }
+
+    .seccion-texto {
+      width: 70%;
+    }
+
+    .grid-container-historia {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      object-fit: contain;
+    }
+
+    .opcion {
+     background-color: black;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .opcion.blanco {
+      background-color: white;
+      color: black;
+    }
+
+    .opcion-titulo {
+      font-size: 18px;
+      margin-bottom: 10px;
+      font-family: 'Lora', serif;
+    }
+
+    .opcion-imagen {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+
+    .opcion-texto {
+      margin-bottom: 20px;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .opcion-button {
+      text-decoration: none;
+      color: white;
+      background-color: black;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+
+
+
+
+    .container-personaje {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .personaje {
+      text-align: center;
+    }
+
+    .personaje-imagen {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto;
+      transition: transform 0.3s ease;
+    }
+
+    .personaje-imagen:hover {
+      transform: scale(1.1);
+    }
+
+    .bio {
+      margin-top: 20px;
+      text-align: justify;
+    }
+    .t{
+  text-align: left;
+  padding: 2%;
+}
+.seccion-texto-tec {
+      width: 70%;
+      margin-left: 10%;
+    }
+
+.registro{
+  font-size: 15pt;
+}
+.contacto{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 10pt;
+}
+#area-imagen img{
+width: 100%;
+height: 500px;
+float: right;
+object-fit: fill;
+}
+#formcontacto{
+width: 50%;
+margin-right: 10%;
+margin-left: 10%;
+}
+#formcontacto input, #formcontacto textarea{
+  width: 100%;
+  padding:5px;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+#formcontacto input, label, textarea{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 10pt;
+}
+.area-imagen img{
+width: 90%;
+height: 500px;
+float: right;
+object-fit: cover;
+margin-left: 30%;
+}
